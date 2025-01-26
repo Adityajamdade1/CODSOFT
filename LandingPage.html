@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Shopping</title>
+    <style>
+        /* Reset some basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and global styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header .logo h1 {
+            margin: 0;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero section styles */
+        #hero {
+            background-color: #0066cc;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        #hero .hero-content h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        #hero .hero-content p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        #hero .shop-now {
+            background-color: #ff6600;
+            padding: 15px 30px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        #hero .shop-now:hover {
+            background-color: #e65c00;
+        }
+
+        /* Products section styles */
+        #products {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        #products h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .product-card {
+            display: inline-block;
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .product-card p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .product-card button {
+            background-color: #0066cc;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .product-card button:hover {
+            background-color: #0057a5;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        footer p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>MobileShop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Shop the Best Mobile Phones</h2>
+            <p>Find the perfect phone for you at great prices!</p>
+            <a href="#products" class="shop-now">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2>Featured Products</h2>
+        <div class="product-card">
+            <img src="img.jpeg" alt="Mobile 1">
+            <h3>Samsung S24</h3>
+            <p>Price: ₹49999</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="img2.jpeg" alt="Mobile 2">
+            <h3>iPhone15</h3>
+            <p>Price:₹65599</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="img3.jpeg" alt="Mobile 3">
+            <h3>Motorola G85</h3>
+            <p>Price: ₹25999</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2025 MobileShop. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

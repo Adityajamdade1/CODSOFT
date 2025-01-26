@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1.5em 0;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+    }
+
+    nav {
+      text-align: center;
+      background-color: #927373;
+      padding: 0.5em;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+
+    nav a:hover {
+      color: #b50643;
+    }
+
+    section {
+      padding: 2em;
+      margin: 2em 0;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 1em;
+      color: #444;
+    }
+
+    .project {
+      display: flex;
+      margin-bottom: 2em;
+    }
+
+    .project img {
+      max-width: 250px;
+      margin-right: 20px;
+      border-radius: 8px;
+    }
+
+    .project-details {
+      max-width: 600px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .skill {
+      background-color: #444;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1.2em;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: white;
+      padding: 1em 0;
+      margin-top: 3em;
+    }
+
+    footer a {
+      color: #1192a9;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><i>Aditya's Portfolio</i></h1>
+    <p>Web Developer & Designer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Aditya, a passionate web developer who loves to create clean, responsive, and user-friendly websites. With a strong background in front-end and back-end development, I am always excited to learn new technologies and improve my skills.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <img src="Project.png" alt="Project 1">
+      <div class="project-details">
+        <h3>Project 1 - Personal Blog</h3>
+        <p>A personal blog built with HTML, CSS, and JavaScript to share my thoughts and experiences.</p>
+        <button onclick="window.location.href='https:https://github.com/Adityajamdade1'">View on GitHub</button>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">Web Design</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>If you'd like to collaborate or just say hi, feel free to reach out!</p>
+    <form>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Connect with me on <a href="https://www.linkedin.com/in/aditya-jamdade-aa7862328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a> |
+    <a href="mailto:adityajamdade2124@gmail.com">Email</a></p>
+  </footer>
+
+  <script>
+    // Placeholder for future functionality like form submission or interactivity
+    document.querySelector('form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Thank you for reaching out!');
+    });
+  </script>
+
+</body>
+</html>
